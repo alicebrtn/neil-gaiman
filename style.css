@@ -1,0 +1,172 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+body{
+	margin:40px;
+	margin-left:70px;
+	margin-right: 70px;
+}
+h1 {
+	font-size: 12vh;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+	font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-family: 'Prociono', serif;
+	font-size: 20px;
+}
+
+a {
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+} 
+
+.icon {
+	float: right;
+	width: 32px;
+}
+
+.icon img{
+	width:100%;
+}
+
+.otherlink {
+	text-align: right;
+}
+
+
+#main{
+	margin-left:60px;
+	width: calc(100% - 30px);
+}
+nav{
+	background:#000;
+	color:#FFF;
+	height:100%;
+	width: 300px;
+	position: fixed;
+	top:0;
+	left:-245px;
+    -webkit-transition: all .6s; /* Safari */
+    transition: all .6s;
+}
+ul{
+	padding:0;
+    margin-left: 15px;
+}
+ul li{   
+    padding: 0;
+	list-style-type: none;
+}
+nav ul li{
+	cursor: pointer;
+}
+nav ul li a{
+	color:#FFF;
+	font-size:16px;
+	font-family: Roboto;
+	text-decoration: none;
+}
+
+.nav-open{
+	left:0;
+}
+nav #reading-experience{
+    color: #FFF;
+    top: 100px;
+    position: absolute;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 17px;
+    left: 182px;
+    font-family: Roboto;
+    width: 200px;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+nav #reading-experience:hover{
+	background-color: red;
+}
+ 
+.button{
+	cursor: pointer;
+}
+.visible{
+	opacity: 1;
+}
+.hidden{
+	opacity: 0;
+}
+.visible-text{
+	display:block
+}
+.hidden-text{
+	display: none;
+}
+#nav-text-close{
+	float:right;
+	margin-top:15px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+#nav-text-left{
+	float:left;
+	margin-top:15px;
+	margin-left: 50px;
+	cursor: pointer;
+	font-size: 25px;
+}
+#nav-text-right{
+	float:right;
+	margin-top:15px;
+	margin-right: 50px;
+	cursor: pointer;
+	font-size: 25px;
+}
+#nav-text{
+	height:100%;
+	background-color: #FFF;
+	width: calc(100% - 300px);
+	position: absolute;
+	top:0;
+	right: 0;
+    -webkit-transition: all .8s; /* Safari */
+    transition: all .8s;
+}
+#nav-text p{
+	color:#000;
+	font-size:22px;
+	padding-left:80px;
+	padding-right:80px;
+}
+.sequence-text{
+	margin-top:60px;
+}
+ul#nav-sequence{
+	position: absolute;
+	bottom:15px;
+ 	width: 240px;
+}
+ul#nav-sequence li{
+	float:left;
+}
+ul#nav-sequence li::after{
+	content:"\00a0\2013\00a0";
+}
+#nav-text-left, #nav-text-right{
+	cursor: pointer;
+}
+.focus-text{
+	font-weight: bold;
+}
